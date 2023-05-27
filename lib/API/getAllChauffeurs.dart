@@ -33,7 +33,7 @@ class Chauffeur {
   }
 }
 
-final String apiUrl = "http://192.168.1.105:8000/api/chauffeur";
+final String apiUrl = "http://172.16.12.242:8000/api/chauffeur";
 
 Future<List<Chauffeur>> getAllChauffeurs() async {
   final response = await http.get(Uri.parse(apiUrl));
